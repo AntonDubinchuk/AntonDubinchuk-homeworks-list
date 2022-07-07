@@ -8,17 +8,74 @@
     <script src="https://kit.fontawesome.com/f67edabe35.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>HTML5 Семантичны елементи</h1>
-    <p>Семантичний елемент чітко описує його значення як для браузера, так і для розробника.</p>
-    <p>Приклади не семантичних елементів: - нічого не говорить про його вміст.</p>
-    Приклади семантичних елементів:, і  -чітко визначає його зміст. <br>
-    <h2>Підтримка браузерів</h2>
-    <div class="browsers__icon">
-        <a href="#"><i class="fas fa-book-dead"></i></a>
-        <a href="#"><i class="fas fa-book-dead"></i></a>
-        <a href="#"><i class="fas fa-book-dead"></i></a>
-        <a href="#"><i class="fas fa-book-dead"></i></a>
-        <a href="#"><i class="fas fa-book-dead"></i></a>
-    </div>
+    <sectoin class="first_section">
+        <h1>HTML5 Семантичны елементи</h1>
+        <p>Семантичний елемент чітко описує його значення як для браузера, так і для розробника.</p>
+        <p>Приклади несемантичних елементів: &ltdiv&gt і &ltspan&gt-нічого не говорить про його вміст.</p>
+        <p>Приклади семантичних елементів: &ltform>, &lttable&gt і &ltarticle&gt-чітко визначає його зміст.</p>
+    </sectoin>
+
+    <section class="second_section">
+        <h2>Підтримка браузерів</h2>
+        <div class="browsers__icon">
+            <a href="#"><i class="fas fa-book-dead"></i></a>
+            <a href="#"><i class="fas fa-book-dead"></i></a>
+            <a href="#"><i class="fas fa-book-dead"></i></a>
+            <a href="#"><i class="fas fa-book-dead"></i></a>
+            <a href="#"><i class="fas fa-book-dead"></i></a>
+        </div>
+        <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+        <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".</p>
+        <p>Прочитайте про це в <a href="#">підтримці браузера HTML5</a>.</p>
+    </section>
+
+    <section class="third_section">
+        <h2>Нові семантичні елементи в HTML5</h2>
+        <p>HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки:</p>
+        <ul>
+            <li>&ltsection&gt</li>
+            <li>&ltarticle&gt</li>
+            <li>&ltheader&gt</li>
+            <li>&ltfooter&gt</li>
+        </ul>
+    </section>
+
+    <section class="fourth_section">
+        <h2>HTML5 &ltsection&gt елемент</h2>
+        <p>Елемент &ltsection&gt визначає розділ в документі.</p>
+        <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою тематичну угруповання контенту, зазвичай з заголовком".</p>
+        <p>Домашня сторінка зазвичай може бути розділена на розділи для ознайомлення, змісту і контактної інформації.</p>
+        <img src="/homework02/assets/example.png" alt="example01">
+    </section>
+
+    <section class="fifth_section">
+        <h2>HTML5 &ltarticle&gt елемент</h2>
+        <p>Елемент &ltarticle&gt визначає незалежний, автономний вміст.</p>
+        <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої частини веб-сайту.</p>
+        <p>Приклади того, де можна використовувати елемент &ltarticle&gt:</p>
+        <ul>
+            <li>Повідомлення на форумі</li>
+            <li>блозі</li>
+            <li>Газетна стаття</li>
+        </ul>
+        <img src="/homework02/assets/example02.png" alt="example02">
+    </section>
+
+    <section class="sixth_section">
+        <h2>HTML5 &ltheader&gt елемент</h2>
+        <p>Елемент &ltheader&gt задає заголовок для документа аборозділу.</p>
+        <p>Елемент &ltheader&gt повинен використовуватися в якості контейнера для вступного змісту.</p>
+        <p>В одному документі може бути кілька елементів &ltheader&gt.</p>
+        <p>У наступному прикладі визначається заголовок для статті:</p>
+        <img src="/homework02/assets/example03.png" alt="example03">
+    </section>
+
+    <section class="seventh_section">
+        <h2>HTML5 &ltfooter&gt елемент</h2>
+        <p>Елемент &ltfooter&gt вказує нижній колонтитул для документаабо розділу.</p>
+        <p>Нижній колонтитул зазвичай містить автора документа, інформацію про авторське право, посилання на умови використання, контактні дані і т.д.</p>
+        <p>В одному документі може бути кілька елементів &ltfooter&gt.</p>
+        <a href="#"><img src="/homework02/assets/example04.png" alt="example04"></a>
+    </section>
 </body>
 </html>
