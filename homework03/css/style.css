@@ -1,0 +1,135 @@
+.main {
+    margin: 55px 55px 0px;
+    border: 3px solid salmon;
+    width: 100%;
+    display: flex;
+}
+
+.block {
+    max-width: 50%;
+    width: 100%;
+    /* background-color: seagreen; */
+    border: 2px solid steelblue;
+    padding: 0px 35px;
+}
+
+label {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #545454;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+form {
+    /* display: flex;
+    width: 50%; */
+}
+
+input {
+    height: 38px;
+    width: 245px;
+    border-radius: 6px;
+}
+
+input:focus {
+    border: 3px solid #643fbc;
+    outline: none;
+}
+
+.labes__block {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.email__form input {
+    width: 500px;
+}
+
+.email__form form {
+    width: 100%;
+}
+
+.labes__block p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #969696;
+    margin-top: 5px;
+}
+
+.radio__block {
+    display: flex;
+}
+
+.radio__block input {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    
+    margin-right: 5px;
+}
+
+.radio__block label {
+    padding-right: 30px;
+}
+
+
+
+
+
+
+/*
+*{
+    box-sizing: border-box;
+}
+
+.block {
+    max-width: 570px;
+    width: 100%;
+}
+
+.element {
+    display: inline-block;
+    width: 100%;
+}
+
+.label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    width: 50%;
+    display: block;
+}
+
+.input {
+    padding: 0;
+}
+
+.input__email {
+    width: 570px;
+}
+
+.input:focus {
+    border-radius: 6px;
+    background: #FFFFFF;
+    border-color: 1px solid #ac1515;
+}
+
+.h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+} */
