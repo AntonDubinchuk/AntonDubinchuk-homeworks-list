@@ -5,57 +5,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="block">
-            <div class="first__block">
+    <div class="main__wrapper"> <!-- First block -->
+        <section class="container">
+
+            <div class="title">
                 <h2>Create an Account</h2>
-                <div class="labes__block">
-                    <form action="get">
-                        <label for="">First Name</label>
-                        <input type="text" name="" id="">
-                    </form>    
-                    <form action="get">
-                        <label for="">Last Name</label>
-                        <input type="text" name="" id="">
-                    </form>
-                    <form action="get" class="email__form">
-                        <label for="">e-mail</label>
-                        <input type="text">
-                    </form>
-                    <p>We'll never share your email with anyone else.</p>
-                </div>
-
-                <div class="radio__block">
-                        <input type="radio" name="sex">
-                        <label for="">Male</label>
-                        <input type="radio" name="sex">
-                        <label for="">Female</label>
-                </div>
-
-                <div class="list__block">
-                    <form action="get">
-                        
-                    </form>
-                </div>
             </div>
 
+            <div class="labes__block">
+                    <label class="label">First Name
+                        <input class="input" type="text" name="name" required="">
+                    </label>
+                    <label class="label">Last Name
+                        <input class="input" type="text" name="name">
+                    </label>
+            </div>
 
+            <div class="email">
+                <label class="label">E-mail
+                    <input class="input" type="email" name="name">
+                    <p class="email_text">We'll never share your email with anyone else.</p>
+                </label>
+            </div>
 
-        </div>
+            <div class="radio">
+                <label class="radio_input_label">
+                    <input class="radio_input" type="radio" name="radio" checked="">
+                    <span class="fake_radio"></span> 
+                    Male
+                </label>
+                <label class="radio_input_label">
+                    <input class="radio_input" type="radio" name="radio">
+                    <span class="fake_radio"></span>
+                    Female
+                </label>
+            </div>
 
+            <div class="labes__block">
+                    <label class="label">Country
+                        <select class="country_select" name="country">
+                            <option value="">Select</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="PL">Poland</option>
+                        </select>
+                        <span class="fake_arrow">
+                            <svg width="28" height="38" viewBox="0 0 28 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 12.25L3.75 17.5H14.25L9 12.25ZM9 25.75L3.75 20.5H14.25L9 25.75Z" fill="#969696"/>
+                                </svg>                                
+                        </span>
+                    </label>
+                    <label class="label">City
+                        <input class="input" type="text" name="name">
+                    </label>
+            </div>
 
+            <div class="sign_up_btn">
+                <button type="button" class="sign_up">Sing up</button>
+            </div>
 
-        
-        <div class="block">
-            <h2>Profile</h2>
+            <div class="terms">
+                <p class="terms_policy"> By clicking the 'Sign Up' button, you confirm that you accept our
+                    <a href="#" class="policy">Terms of Use</a>
+                    and
+                    <a href="#" class="policy">Privacy Policy</a>
+                </p>
+            </div>
 
-        </div>
+            <footer class="footer">
+                <p>Have an account?</p>
+                <a href="#" class="footer_log_in">Log in</a>
+            </footer>
+
+        </section> <!-- Second block -->
+
+        <section class="container">
+
+            <div class="title">
+                <h2 class="title">Profile</h2>
+            </div>
+
+            <div class="labes__block">
+                <div class="avatar">
+                    <img slot="profile_avatar" src="./assets/avatar.jpg" width="80px" height="80px" alt="Profile avatar">
+                </div>
+
+                <div class="download">
+                    <label class="label dwn">
+                        <input class="input download_btn" type="file" name="name">
+                            <span class="camera"><i class="fas fa-camera"></i></span>
+                    </label>
+                    <p class="download_text">Up to 1 MB (300x300 px)</p>
+                </div>
+
+                <button class="delete">
+                        <span class="trash"><i class="fas fa-trash-alt"></i></span>
+                </button>
+            </div>            
+
+            <div class="labes__block">
+                <label class="label">Name
+                    <input class="input" type="text" name="name" required="">
+                </label>
+                <label class="label">E-mail
+                    <input class="input" type="email" name="name">
+                </label>                
+            </div>
+
+            <div class="labes__block">
+                <label class="label">Country
+                    <select class="country_select" name="country">
+                        <option value="">Select</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="PL">Poland</option>
+                    </select>
+                    <span class="fake_arrow">
+                        <svg width="28" height="38" viewBox="0 0 28 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 12.25L3.75 17.5H14.25L9 12.25ZM9 25.75L3.75 20.5H14.25L9 25.75Z" fill="#969696"/>
+                            </svg>                                
+                    </span>
+                </label>
+                <label class="label">City
+                    <input class="input" type="text" name="name">
+                </label>
+            </div>
+
+            <div class="labes__block">
+                <label class="label">Zip Code
+                    <input class="input" type="text" name="name" required="">
+                </label>
+                <label class="label">Phone Number
+                    <input class="input" type="number" name="name">
+                </label>
+            </div>
+
+            <div class="sign_up_btn upd">
+                <button type="button" class="sign_up">Update</button>
+            </div>
+            
+        </section>
     </div>
+    <script src="https://kit.fontawesome.com/f67edabe35.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
