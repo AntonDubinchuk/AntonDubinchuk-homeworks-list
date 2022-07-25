@@ -103,7 +103,7 @@ p {
   }
 
 .input:checked+label::before {
-    background-image: url("/diner_list/assets/vector.svg");
+    background-image: url("./assets/vector.svg");
   }
 
 input:checked + .label p{
