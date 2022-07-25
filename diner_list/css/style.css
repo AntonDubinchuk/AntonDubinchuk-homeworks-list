@@ -43,7 +43,7 @@ p {
     margin-left: 50px;
 }
 
-            /* MAIN */
+        /* MAIN */
 
 .header {
     background: #4A4F56;
@@ -75,10 +75,10 @@ p {
     position: absolute;
     top: 0;
 }
-            /* /MAIN */
+        /* /MAIN */
 
 
-            /* FAKE BUTTON */
+        /* FAKE BUTTON */
 .input {
     position: absolute;
     z-index: -1;
@@ -114,9 +114,9 @@ input:checked + .label p{
 input:checked + .label {
     background-color: #7A7593;
 }
-            /* /FAKE BUTTON */
+        /* /FAKE BUTTON */
 
-            /* TEXT */
+        /* TEXT */
 
 .text_label {
     font-size: 18px;
@@ -126,9 +126,9 @@ input:checked + .label {
     font-size: 11px;
     line-height: 19px;
 }
-            /* /TEXT */
+        /* /TEXT */
 
-            /* :nth-child() */
+        /* :nth-child() */
 li{
     background-color: #88839E;
 }
@@ -138,9 +138,9 @@ li:hover {
     border-bottom: 2px solid whitesmoke;
     background-color: #625E77;
 }
-            /* /:nth-child() */
+        /* /:nth-child() */
 
-            /* BUTTON */
+        /* BUTTON */
 .button {
     margin-top: 45px;
     height: 45px;  
@@ -164,4 +164,4 @@ li:hover {
     border: none;
 }
 
-            /* /BUTTON */
+        /* /BUTTON */
