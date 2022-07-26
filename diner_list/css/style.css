@@ -103,6 +103,8 @@ p {
   }
 
 .input:checked+label::before {
+    content: '';
+    display: inline-block;
     background-image: url('../assets/vector.svg');
   }
 
