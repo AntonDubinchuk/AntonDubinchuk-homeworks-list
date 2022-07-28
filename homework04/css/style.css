@@ -16,6 +16,9 @@
 
 .header{
     padding-top: 20px;
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header h2 {
@@ -77,7 +80,7 @@
 }
 
 .column_card {
-    max-width: 25%;
+    max-width: 32%;
     border: 2px solid #E5EAF4;
     border-radius: 6px;
 }
@@ -106,6 +109,10 @@ a {
 /* FOOTER */
 .footer {
     background: #16133D;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
 }
 
 .footer h2 {
