@@ -144,3 +144,39 @@ svg {
     display: flex;
 }
 /* /FOOTER */
+
+svg.icon path.color-one {
+    fill: #D1E7FF;
+}
+
+svg.icon path.color-two {
+    fill: #E8F3FF;
+}
+
+svg.icon path.color-three {
+    fill: #B9DCFF;
+}
+
+svg.icon path.color-four {
+    fill: #007FFC;
+}
+
+.column_card:hover {
+    border: 1px solid #3DB370;
+}
+
+.column_card:hover svg.icon path.color-one {
+    fill: #E1F4F5;
+}
+
+.column_card:hover svg.icon path.color-two {
+    fill: #F4FEFF;
+}
+
+.column_card:hover svg.icon path.color-three {
+    fill: #CAEFF2;
+}
+
+.column_card:hover svg.icon path.color-four {
+    fill: #52C29D;
+}

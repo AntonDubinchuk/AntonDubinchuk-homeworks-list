@@ -1,0 +1,86 @@
+/* HEADER */
+.wrapper, .side_li {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    position: relative;
+    top: 25px;
+
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.a_eng {
+    font-family: 'Tourney';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+.logo_img {
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+.nav_block {
+    padding-left: 3%;
+}
+/* /HEADER */
+
+/* MAIN */
+.main {
+    padding-top: 100px;
+    display: inline-flex;
+}
+
+
+/* SIDE_BAR */
+.li_a {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.side_li::after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    left: 40px;
+    top: 50px;
+    background-color: rgba(189, 189, 189, 1);
+    position: absolute;
+}
+
+.side_li {
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.side_bar {
+    max-width: 30%;
+}
+/* /SIDE_BAR */
+
+/* SECTION */
+.main_contant {
+    max-width: 70%;
+    padding-left: 40px;
+}
+/* /SECTION */
+
+/* /MAIN */
