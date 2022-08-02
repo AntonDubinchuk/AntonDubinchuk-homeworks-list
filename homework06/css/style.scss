@@ -82,19 +82,26 @@ div {
         max-height: 100%;
         display: flex;
         justify-content: space-between;
-        position: relative;
-    
-    
+        position: relative;   
+        
         .contant_itm {
             max-width: 40%;
             justify-content: space-between;
             padding-bottom: 30px;
             padding-top: 50px;
-    
+            
             .contant_img_block {
                 position: relative;
                 max-width: 400px;
                 max-height: 400px;
+                &:hover {
+                    content: '';
+                    display: block;
+                    width: 2px;
+                    height: 100%;
+                    background: $color-gold;
+                    position: absolute;
+                }
 
                 .contant_img {
                     max-width: 400px;
@@ -133,14 +140,18 @@ div {
             }
     
         }
-    
-    
+        .vertical_line {
+            display: inline-block;
+            width: 10px;
+            background: #ffcc00;
+        }
     }
+    
     
     
     .text {
         display: inline-block;
-    
+        
         .contant_name {
             font-family: 'Roboto';
             font-weight: 900;
@@ -228,27 +239,6 @@ div {
             padding: 5px 10px;
         }
     
-        .contant_wrp:after {
-            content: '';
-            position: absolute;
-            display: block;
-            background-color: $color-gold;
-            height: 100%;
-            width: 1px;
-            left: 50%;
-        }
+        
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
