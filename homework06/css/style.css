@@ -1,4 +1,11 @@
-h1, h2, h3, h4, h5, p, span, div {
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+div {
   margin: 0;
   padding: 0;
 }
@@ -7,8 +14,7 @@ h1, h2, h3, h4, h5, p, span, div {
   padding: 120px 135px;
   text-align: center;
 }
-
-.main_subtitle {
+.main .title_wrp .main_subtitle {
   font-family: "Raleway";
   font-weight: 500;
   font-size: 18px;
@@ -17,8 +23,7 @@ h1, h2, h3, h4, h5, p, span, div {
   text-transform: uppercase;
   color: #898F8F;
 }
-
-.main_title {
+.main .title_wrp .main_title {
   color: #FFCC00;
   font-size: 24px;
   font-family: "Roboto";
@@ -29,14 +34,12 @@ h1, h2, h3, h4, h5, p, span, div {
   text-transform: uppercase;
   padding-top: 15px;
 }
-
-.main_img {
+.main .title_wrp .main_img {
   position: relative;
   width: 600px;
   margin: 40px auto 0px;
 }
-
-.main_img::after {
+.main .title_wrp .main_img::after {
   content: "";
   display: block;
   background: #FFCC00;
@@ -46,8 +49,7 @@ h1, h2, h3, h4, h5, p, span, div {
   top: 10px;
   left: 70px;
 }
-
-.main_img::before {
+.main .title_wrp .main_img::before {
   content: "";
   display: block;
   background: #FFCC00;
@@ -57,58 +59,7 @@ h1, h2, h3, h4, h5, p, span, div {
   top: 10px;
   left: 320px;
 }
-
-.contant_img {
-  max-width: 400px;
-  max-height: 400px;
-  position: relative;
-  top: 10px;
-}
-
-.contant_itm {
-  max-width: 40%;
-  justify-content: space-between;
-  padding-bottom: 30px;
-  padding-top: 50px;
-}
-
-.contant_name {
-  font-family: "Roboto";
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  text-transform: capitalize;
-  color: #666666;
-}
-
-.contant_subtitle {
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  text-transform: capitalize;
-  padding-top: 60px;
-}
-
-.contant_social_list {
-  padding-top: 30px;
-}
-
-.contant_text {
-  font-family: "Raleway";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: #333333;
-  padding-top: 40px;
-  padding-bottom: 0px;
-}
-
-.text {
-  display: inline-block;
-}
-
-.contant_wrp {
+.main .contant_wrp {
   max-width: 1030px;
   margin: 0 auto;
   padding-top: 40px;
@@ -117,18 +68,88 @@ h1, h2, h3, h4, h5, p, span, div {
   justify-content: space-between;
   position: relative;
 }
-
-.contant_wrp:after {
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: #FFCC00;
-  height: 100%;
-  width: 1px;
-  left: 50%;
+.main .contant_wrp .contant_itm {
+  max-width: 40%;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 50px;
 }
-
-.lines_span {
+.main .contant_wrp .contant_itm .contant_img_block {
+  position: relative;
+  max-width: 400px;
+  max-height: 400px;
+}
+.main .contant_wrp .contant_itm .contant_img_block .contant_img {
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+  top: 10px;
+}
+.main .contant_wrp .contant_itm .contant_img_block .span {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #FFCC00;
+  position: absolute;
+}
+.main .contant_wrp .contant_itm .contant_img_block .left_top {
+  left: -10px;
+  border-bottom: none;
+  border-right: none;
+}
+.main .contant_wrp .contant_itm .contant_img_block .left_bottom {
+  left: -10px;
+  bottom: -20px;
+  border-top: none;
+  border-right: none;
+}
+.main .contant_wrp .contant_itm .contant_img_block .right_top {
+  left: 310px;
+  border-bottom: none;
+  border-left: none;
+}
+.main .contant_wrp .contant_itm .contant_img_block .right_bottom {
+  bottom: -20px;
+  right: -10px;
+  border-top: none;
+  border-left: none;
+}
+.main .text {
+  display: inline-block;
+}
+.main .text .contant_name {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #666666;
+}
+.main .text .contant_subtitle {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  padding-top: 60px;
+}
+.main .text .contant_social_list {
+  padding-top: 30px;
+}
+.main .text .contant_social_list .svg:hover {
+  fill: #FFCC00;
+  stroke: #FFCC00;
+  circle: #FFCC00;
+}
+.main .text .contant_text {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+.main .text .contant_lines .lines_span {
   position: relative;
   display: block;
   height: 4px;
@@ -138,8 +159,7 @@ h1, h2, h3, h4, h5, p, span, div {
   margin-bottom: 20px;
   margin-top: 15px;
 }
-
-.lines_span::before {
+.main .text .contant_lines .lines_span::before {
   content: "";
   display: block;
   background: #FFCC00;
@@ -149,8 +169,7 @@ h1, h2, h3, h4, h5, p, span, div {
   top: 0;
   left: 30px;
 }
-
-.lines_span::after {
+.main .text .contant_lines .lines_span::after {
   content: "";
   display: block;
   background: #FFCC00;
@@ -160,8 +179,7 @@ h1, h2, h3, h4, h5, p, span, div {
   top: 0;
   left: -20px;
 }
-
-.contant_a {
+.main .text .contant_a {
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 14px;
@@ -171,4 +189,13 @@ h1, h2, h3, h4, h5, p, span, div {
   text-decoration: none;
   border: 1px solid #FFCC00;
   padding: 5px 10px;
+}
+.main .text .contant_wrp:after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #FFCC00;
+  height: 100%;
+  width: 1px;
+  left: 50%;
 }
