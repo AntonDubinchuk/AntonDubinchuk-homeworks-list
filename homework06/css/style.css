@@ -68,6 +68,16 @@ div {
   justify-content: space-between;
   position: relative;
 }
+.main .contant_wrp:after {
+  content: "";
+  display: block;
+  width: 1px;
+  background-color: red;
+  position: absolute;
+  height: 100%;
+  top: 10px;
+  left: 50px;
+}
 .main .contant_wrp .contant_itm {
   max-width: 40%;
   justify-content: space-between;
@@ -78,6 +88,14 @@ div {
   position: relative;
   max-width: 400px;
   max-height: 400px;
+}
+.main .contant_wrp .contant_itm .contant_img_block:hover {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: #FFCC00;
+  position: absolute;
 }
 .main .contant_wrp .contant_itm .contant_img_block .contant_img {
   max-width: 400px;
@@ -113,6 +131,11 @@ div {
   border-top: none;
   border-left: none;
 }
+.main .contant_wrp .vertical_line {
+  display: inline-block;
+  width: 10px;
+  background: #ffcc00;
+}
 .main .text {
   display: inline-block;
 }
@@ -138,7 +161,6 @@ div {
 .main .text .contant_social_list .svg:hover {
   fill: #FFCC00;
   stroke: #FFCC00;
-  circle: #FFCC00;
 }
 .main .text .contant_text {
   font-family: "Raleway";
@@ -189,13 +211,4 @@ div {
   text-decoration: none;
   border: 1px solid #FFCC00;
   padding: 5px 10px;
-}
-.main .text .contant_wrp:after {
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: #FFCC00;
-  height: 100%;
-  width: 1px;
-  left: 50%;
 }

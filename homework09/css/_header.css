@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 20px;
+}
+.header .header_block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header_block .header_wrapper.logo {
+  display: flex;
+  margin-top: 10px;
+}
+.header .header_block .header_wrapper.logo .header_logo_img .header_logo_image {
+  max-width: 60px;
+  max-height: 60px;
+}
+.header .header_block .header_wrapper.logo .header_logo_text .header_logo_p {
+  font-family: "Train One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+.header .header_block .header_wrapper.links {
+  display: flex;
+  padding-top: 28px;
+}
+.header .header_block .header_wrapper.links .header_link_a {
+  position: relative;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-right: 30px;
+  text-decoration: none;
+  color: #3C3C3C;
+}
+.header .header_block .header_wrapper.links .header_link_a:hover {
+  color: #18B5DC;
+}
+.header .header_block .header_wrapper.button {
+  display: flex;
+}
+.header .header_block .button .header_button_fake {
+  margin-top: 28px;
+}
+.header .header_block .button .header_button_fake:hover {
+  scale: 1.1;
+}
+.header .header_block .button .header_button_fake .header_button_fake--span {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
