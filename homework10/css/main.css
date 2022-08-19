@@ -1,0 +1,31 @@
+.main .wrapper {
+  padding: 0 135px 0;
+  margin: 0 auto;
+}
+.main .main_wrapper .first_block.wrapper .first_block--title {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: #000000;
+  letter-spacing: 0.05em;
+  padding: 40px 0 20px 0;
+}
+.main .main_wrapper .first_block.wrapper .img_block {
+  max-width: 100%;
+  width: 100%;
+}
+.main .main_wrapper .first_block.wrapper .img_block .picture {
+  width: 100%;
+}
+.main .main_wrapper .first_block.wrapper .img_block .picture .picture_img {
+  width: 100%;
+}
+.main .main_wrapper .description_section.wrapper .description_section--overview .description_section--p_wrapper {
+  max-width: 50%;
+  width: 100%;
+}
+.main .main_wrapper .third_section.wrapper {
+  padding-bottom: 90px;
+}

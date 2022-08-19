@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Lato";  
+    src: url("./Fonts/Lato/Lato-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; }
+     
+@font-face{
+    font-family: "Red Hat Display";
+    src: url("./Fonts/Red_Hat_Display/static/RedHatDisplay-SemiBold.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: 600; }
+
+@font-face{
+    font-family: "Red Hat Display";
+    src: url("./Fonts/Red_Hat_Display/static/RedHatDisplay-Regular.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: 400; }
