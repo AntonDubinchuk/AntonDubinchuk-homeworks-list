@@ -2,6 +2,11 @@ html, body {
     padding: 0;
     margin: 0;
 }
+body {
+    
+    background: rgb(189,203,219);
+    background: linear-gradient(13deg, rgba(189,203,219,0.35057773109243695) 8%, rgba(148,187,233,0.14329481792717091) 95%);
+}
 p {
     margin: 0;
     padding: 0;
@@ -15,12 +20,11 @@ a {
 }
 
 .main {
-    background: rgb(189,203,219);
-    background: linear-gradient(13deg, rgba(189,203,219,0.35057773109243695) 8%, rgba(148,187,233,0.14329481792717091) 95%);
     padding-bottom: 30px;
     .wrapper {
         padding: 0 135px;
         max-width: 1170px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -152,9 +156,6 @@ a {
                 content: "";
                 opacity: 0;
                 transition: opacity 0.5s ease-in-out;
-            }
-            &::after {
-
             }
             .img_wrapper {
                 &::before {
