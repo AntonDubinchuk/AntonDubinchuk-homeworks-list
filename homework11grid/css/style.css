@@ -237,3 +237,17 @@ a {
   grid-row: 5/6;
   grid-column: 1/span 2;
 }
+
+@media screen and (max-width: 1048px) {
+  .name {
+    display: none;
+  }
+
+  .date {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 0 35px;
+  }
+}
