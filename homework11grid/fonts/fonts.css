@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('./Roboto/Roboto-Regular.eot');
+	src: local('☺'), url('./Roboto/Roboto-Regular.woff') format('woff'), 
+	url('./Roboto/Roboto-Regular.ttf') format('truetype'), 
+	url('./Roboto/Roboto-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('./Roboto/Roboto-Medium.eot');
+	src: local('☺'), url('./Roboto/Roboto-Medium.woff') format('woff'), 
+    url('./Roboto/Roboto-Medium.ttf') format('truetype'), 
+    url('./Roboto/Roboto-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Delius Unicase';
+	src: url('./Delius_Unicase/DeliusUnicase-Regular.eot');
+	src: local('☺'), url('./Delius_Unicase/DeliusUnicase-Regular.woff') format('woff'), 
+    url('./Delius_Unicase/DeliusUnicase-Regular.ttf') format('truetype'), 
+    url('./Delius_Unicase/DeliusUnicase-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:  url('./icons/icomoon.eot');
+	src:  url('./icons/icomoon.eot?5cda0d#iefix') format('embedded-opentype'),
+	  url('./icons/icomoon.ttf?5cda0d') format('truetype'),
+	  url('./icons/icomoon.woff?5cda0d') format('woff'),
+	  url('./icons/icomoon.svg?5cda0d#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-download:before {
+	content: "\e900";
+	color: #4f4f4f;
+  }
+  .icon-heart:before {
+	content: "\e901";
+	color: #4f4f4f;
+  }
+  
