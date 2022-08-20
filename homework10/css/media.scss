@@ -99,6 +99,10 @@
 
             .description_section.wrapper {
                 .description_section--overview {
+                    .description_section--p_wrapper {
+                        max-width: 100%;
+                        width: 100%;
+                    }
                     h3.description_section--h3 {
                         margin: 70px 0 40px 0;
                         font-size: 26px;

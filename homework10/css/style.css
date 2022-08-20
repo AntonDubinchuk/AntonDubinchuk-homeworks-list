@@ -234,6 +234,10 @@ h3 {
     font-size: 30px;
     padding: 20px 0 40px;
   }
+  main.main .main_wrapper .description_section.wrapper .description_section--overview .description_section--p_wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
   main.main .main_wrapper .description_section.wrapper .description_section--overview h3.description_section--h3 {
     margin: 70px 0 40px 0;
     font-size: 26px;
