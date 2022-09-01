@@ -2,6 +2,16 @@
   padding: 0 135px 0;
   margin: 0 auto;
 }
+.main .img_block {
+  max-width: 100%;
+  width: 100%;
+}
+.main .img_block .picture {
+  width: 100%;
+}
+.main .img_block .picture .picture_img {
+  width: 100%;
+}
 .main .main_wrapper .first_block.wrapper .first_block--title {
   font-family: "Red Hat Display";
   font-style: normal;
