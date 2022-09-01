@@ -1,0 +1,71 @@
+.footer {
+    background: #F4F4F4;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .footer_wrapper.wrapper {
+        padding: 0 135px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .footer_contacts {
+            display:flex;
+            flex-direction:column;
+            .footer_contacts--h2 {
+                font-family: 'Red Hat Display';
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 64px;
+                letter-spacing: 0.05em;
+                color: #000000;
+                padding-bottom: 15px;
+            }
+            .contacts_a {
+                padding-top: 15px;
+                font-family: 'Lato';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 166%;
+                letter-spacing: 0.1em;
+                color: #000000;
+            }
+        }
+
+        .footer_copyright {
+            display: flex;
+            align-items:flex-end;
+            .footer_copyright--text {
+                font-size: 12px;
+            }
+        }
+
+        .footer_social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+
+            .social_wrapper {
+                max-width: 50px;
+                width: 50px;
+                max-height: 50px;
+                height: 50px;
+                display: flex;
+                border: 1px solid #565656;
+                &:hover {
+                    background-color: #565656;
+                    border-radius: 50%;
+                    transform: scale(1.4);
+                    .social_a:before {
+                        color: #F4F4F4;
+                    }
+                }
+                .social_a {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

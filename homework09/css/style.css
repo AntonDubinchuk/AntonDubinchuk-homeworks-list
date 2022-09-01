@@ -1,0 +1,283 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  transition: ease 0.4s;
+}
+
+/* base.scss */
+body {
+  text-align: center;
+}
+body .wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 20px;
+}
+.header .header_block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header_block .header_wrapper.logo {
+  display: flex;
+  margin-top: 10px;
+}
+.header .header_block .header_wrapper.logo .header_logo_img .header_logo_image {
+  max-width: 60px;
+  max-height: 60px;
+}
+.header .header_block .header_wrapper.logo .header_logo_text .header_logo_p {
+  font-family: "Train One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+.header .header_block .header_wrapper.links {
+  display: flex;
+  padding-top: 28px;
+}
+.header .header_block .header_wrapper.links .header_link_a {
+  position: relative;
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-right: 30px;
+  text-decoration: none;
+  color: #3C3C3C;
+}
+.header .header_block .header_wrapper.links .header_link_a:hover {
+  color: #18B5DC;
+}
+.header .header_block .header_wrapper.button {
+  display: flex;
+}
+.header .header_block .button .header_button_fake {
+  margin-top: 28px;
+}
+.header .header_block .button .header_button_fake:hover {
+  scale: 1.1;
+}
+.header .header_block .button .header_button_fake .header_button_fake--span {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+.main {
+  padding-bottom: 150px;
+}
+.main .main_block.wrapper .main_text {
+  margin-top: 150px;
+  max-width: 570px;
+  width: 100%;
+  margin: 150px auto 0;
+}
+.main .main_block.wrapper .main_text .main_text-h2 {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 34px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  position: relative;
+}
+.main .main_block.wrapper .main_text .main_text-h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 262.5px;
+  top: 55px;
+  width: 45px;
+  height: 4px;
+  background: #DDDBDB;
+}
+.main .main_block.wrapper .main_text .main_text-p {
+  margin-top: 65px;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #3C3C3C;
+  margin-bottom: 60px;
+}
+.main .main_cards_block {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main_cards_block .main_cards-card_wrapper {
+  display: inline-flex;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card {
+  max-width: 270px;
+  width: 100%;
+  max-height: 335px;
+  height: 100%;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper:hover {
+  transform: rotateY(180deg);
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper:hover .main_cards-avatar_hover_wrapper {
+  z-index: 5;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper .main_cards-avatar_photo {
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper .main_cards-avatar_photo .main_avatar-img {
+  max-width: 270px;
+  max-height: 270px;
+  width: 100%;
+  height: 100%;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper .main_cards-avatar_hover_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 270px;
+  max-height: 270px;
+  width: 100%;
+  height: 100%;
+  background: #18B5DC;
+  display: block;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper .main_cards-avatar_hover_wrapper .main_cards-avatar_hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 43% auto 0;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper .main_cards-avatar_hover_wrapper .main_cards-avatar_hover .main_card-avatar_hover-icon {
+  width: 42px;
+  height: 42px;
+  background: #5DCBE6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card .main_cards-avatar_wrapper .main_cards-avatar_hover_wrapper .main_cards-avatar_hover .main_card-avatar_hover-icon:hover {
+  scale: 1.3;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card_title {
+  margin-top: 20px;
+  text-align: left;
+  width: 100%;
+  transform: rotateY(0deg);
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card_title .main_cards-title_h5 {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 18px;
+  color: #282528;
+}
+.main .main_cards_block .main_cards-card_wrapper .main_cards-card_title .main_cards-title_p {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 18px;
+  color: #646464;
+}
+
+footer.footer {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+footer.footer .footer_wrapper.wrapper .footer-logo_block {
+  display: flex;
+  justify-content: center;
+}
+footer.footer .footer_wrapper.wrapper .footer-logo_block .footer-logo_icon .footer-logo_img {
+  max-width: 60px;
+  max-height: 60px;
+}
+footer.footer .footer_wrapper.wrapper .footer-logo_block .footer-logo_text .footer-logo_p {
+  font-family: "Train One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  text-transform: uppercase;
+  margin-top: 9px;
+}
+footer.footer .footer_wrapper.wrapper .footer-logo_link {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 45px auto 0;
+}
+footer.footer .footer_wrapper.wrapper .footer-logo_link .footer-logo_a {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #3C3C3C;
+  text-align: center;
+}
+footer.footer .footer_wrapper.wrapper .footer-logo_link .footer-logo_a:hover {
+  color: #18B5DC;
+}
+footer.footer .footer_wrapper.wrapper .footer-icon_link {
+  padding-top: 30px;
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+footer.footer .footer_wrapper.wrapper .footer-icon_link .footer-icon_a {
+  display: flex;
+  border: 1px solid #5DCBE6;
+  gap: 6px;
+}
+footer.footer .footer_wrapper.wrapper .footer-icon_link .footer-icon_a .footer-icon_img {
+  width: 42px;
+  height: 42px;
+  background: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #5DCBE6;
+}
+footer.footer .footer_wrapper.wrapper .footer-icon_link .footer-icon_a .footer-icon_img:hover {
+  scale: 1.3;
+  outline: 1px solid #5DCBE6;
+}

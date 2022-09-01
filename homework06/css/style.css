@@ -1,0 +1,214 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 120px 135px;
+  text-align: center;
+}
+.main .title_wrp .main_subtitle {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #898F8F;
+}
+.main .title_wrp .main_title {
+  color: #FFCC00;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+.main .title_wrp .main_img {
+  position: relative;
+  width: 600px;
+  margin: 40px auto 0px;
+}
+.main .title_wrp .main_img::after {
+  content: "";
+  display: block;
+  background: #FFCC00;
+  height: 1px;
+  width: 210px;
+  position: absolute;
+  top: 10px;
+  left: 70px;
+}
+.main .title_wrp .main_img::before {
+  content: "";
+  display: block;
+  background: #FFCC00;
+  height: 1px;
+  width: 210px;
+  position: absolute;
+  top: 10px;
+  left: 320px;
+}
+.main .contant_wrp {
+  max-width: 1030px;
+  margin: 0 auto;
+  padding-top: 40px;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.main .contant_wrp:after {
+  content: "";
+  display: block;
+  width: 1px;
+  background-color: red;
+  position: absolute;
+  height: 100%;
+  top: 10px;
+  left: 50px;
+}
+.main .contant_wrp .contant_itm {
+  max-width: 40%;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.main .contant_wrp .contant_itm .contant_img_block {
+  position: relative;
+  max-width: 400px;
+  max-height: 400px;
+}
+.main .contant_wrp .contant_itm .contant_img_block:hover {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: #FFCC00;
+  position: absolute;
+}
+.main .contant_wrp .contant_itm .contant_img_block .contant_img {
+  max-width: 400px;
+  max-height: 400px;
+  position: relative;
+  top: 10px;
+}
+.main .contant_wrp .contant_itm .contant_img_block .span {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #FFCC00;
+  position: absolute;
+}
+.main .contant_wrp .contant_itm .contant_img_block .left_top {
+  left: -10px;
+  border-bottom: none;
+  border-right: none;
+}
+.main .contant_wrp .contant_itm .contant_img_block .left_bottom {
+  left: -10px;
+  bottom: -20px;
+  border-top: none;
+  border-right: none;
+}
+.main .contant_wrp .contant_itm .contant_img_block .right_top {
+  left: 310px;
+  border-bottom: none;
+  border-left: none;
+}
+.main .contant_wrp .contant_itm .contant_img_block .right_bottom {
+  bottom: -20px;
+  right: -10px;
+  border-top: none;
+  border-left: none;
+}
+.main .contant_wrp .vertical_line {
+  display: inline-block;
+  width: 10px;
+  background: #ffcc00;
+}
+.main .text {
+  display: inline-block;
+}
+.main .text .contant_name {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #666666;
+}
+.main .text .contant_subtitle {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  padding-top: 60px;
+}
+.main .text .contant_social_list {
+  padding-top: 30px;
+}
+.main .text .contant_social_list .svg:hover {
+  fill: #FFCC00;
+  stroke: #FFCC00;
+}
+.main .text .contant_text {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  padding-top: 40px;
+  padding-bottom: 0px;
+}
+.main .text .contant_lines .lines_span {
+  position: relative;
+  display: block;
+  height: 4px;
+  width: 20px;
+  background-color: #FFCC00;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.main .text .contant_lines .lines_span::before {
+  content: "";
+  display: block;
+  background: #FFCC00;
+  height: 4px;
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+.main .text .contant_lines .lines_span::after {
+  content: "";
+  display: block;
+  background: #FFCC00;
+  height: 4px;
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+}
+.main .text .contant_a {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #666666;
+  text-decoration: none;
+  border: 1px solid #FFCC00;
+  padding: 5px 10px;
+}

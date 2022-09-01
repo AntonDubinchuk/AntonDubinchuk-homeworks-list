@@ -1,0 +1,141 @@
+@media screen and (max-width:768px) {
+    .header {
+        .header_tile.wrapper {
+            padding: 0 35px 0;
+
+            .header_h5 {
+                padding-top: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    // /header
+
+    main.main {
+        .wrapper {
+            padding: 0 35px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .main_wrapper {
+        .first_block.wrapper {
+
+            .first_block--title {
+                font-size: 33px;
+                line-height: 50px;
+                letter-spacing: 0.05em;
+                padding: 40px 0 50px 0;
+            }
+        }
+    }
+
+    .description_section.wrapper {
+        .description_section--overview {
+            .description_section--p_wrapper {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+// /main
+.footer {
+    padding: 50px 0px;
+    background: #bdbdbd5c;
+
+    .footer_wrapper.wrapper {
+        padding: 0 35px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        .footer_contacts {
+            display: flex;
+            align-items: center;
+
+            .footer_contacts--h2 {
+                padding-bottom: 20px;
+                text-align: center;
+            }
+        }
+
+        .footer_copyright {
+            order: 3;
+            text-align: center;
+        }
+
+        .footer_social {
+            padding-top: 50px;
+            order: 2;
+        }
+    }
+}
+
+
+@media screen and (max-width:360px) {
+    .header {
+        .header_tile.wrapper {
+            padding: 0 10px 0;
+        }
+    }
+
+    main.main {
+        .wrapper {
+            padding: 0 10px 0;
+        }
+
+        .main_wrapper {
+            .first_block.wrapper {
+                .first_block--title {
+                    font-size: 30px;
+                    padding: 20px 0 40px;
+                }
+            }
+
+            .description_section.wrapper {
+                .description_section--overview {
+                    .description_section--p_wrapper {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                    h3.description_section--h3 {
+                        margin: 70px 0 40px 0;
+                        font-size: 26px;
+                    }
+                }
+            }
+
+            .third_section.wrapper {
+                padding-bottom: 70px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .footer {
+        .footer_wrapper.wrapper {
+            .footer_contacts {
+                .footer_contacts--h2 {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+
+                .contacts_a {
+                    font-size: 18px;
+                }
+
+                .footer_copyright--text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+body {
+  text-align: center;
+}
+body .wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}

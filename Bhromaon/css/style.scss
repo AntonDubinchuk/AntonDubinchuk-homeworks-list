@@ -1,0 +1,951 @@
+@use './normalize.scss';
+
+body {
+    font-family: 'Aleo';
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mountain {
+    background: url(../img/mountainBG.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 860px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.mountain-title {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 295px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h5.mountain-subtitle {
+    font-family: 'Josefin Sans';
+    font-weight: lighter;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-top: 8px;
+    margin-bottom: 0;
+    letter-spacing: 0.31em;
+    text-align: center;
+}
+
+.mountain-search_wrapper {
+    position: relative;
+    margin-top: 48px;
+}
+
+.search_youre-input {
+    width: 647px;
+    height: 60px;
+    border: none;
+    position: relative;
+    color: #5373FD;
+
+    &:focus {
+        border: none;
+        outline: none;
+        box-shadow: inset 0px 0px 20px 0px rgba(83, 115, 253, 0.66);
+    }
+
+    &::placeholder {
+        text-align-last: left;
+        position: absolute;
+        left: 36px;
+        top: 22px;
+        font-family: 'Josefin Sans';
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        color: #999999;
+
+    }
+}
+
+.search_youre-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    padding: 15px 15px;
+    color: #FFFFFF;
+    background: #5373FD;
+
+    font-family: 'Aleo';
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    text-align: center;
+
+    .svg-search {
+        padding-right: 12px;
+    }
+}
+
+.mountain-scroll {
+    font-family: 'Josefin Sans';
+    font-weight: lighter;
+    font-size: 14px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 210px;
+    letter-spacing: 0.2em;
+    position: relative;
+
+    .svg-scroll {
+        top: 150%;
+        left: 49%;
+        position: absolute;
+    }
+}
+
+
+// /mountain
+
+.bhromaon-nav {
+    background: #5373FD;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.nav-title {
+    max-width: 50%;
+    width: 100%;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.nav-links_wrapper {
+    max-width: 44%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .nav-links_a {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+
+// /bhromaon-nav
+
+.why_choose_us {
+    background: url(../img/castleBG.jpg) no-repeat;
+    background-size: cover;
+    min-height: 704px;
+    background-position: 50% 50%;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        min-height: 704px;
+    }
+}
+
+.why_choose_us-description {
+    max-width: 50%;
+    width: 100%;
+}
+
+.why_choose_us-wrapper_img {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 120px;
+}
+
+.why_choose_us-picture {
+    max-width: 460px;
+    width: 100%;
+}
+
+.mini_mountain_picture {
+    display: flex;
+    justify-content: end;
+    margin-top: 16px;
+}
+
+.description-title {
+    font-size: 36px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.description-text {
+    font-family: 'Josefin Sans';
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 24px 0 0;
+}
+
+.description-button {
+    display: inline-block;
+    margin-top: 32px;
+    padding: 20px;
+    background: #5373FD;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+// /why_choose_us
+
+.icons {
+    background: #333333;
+    padding-bottom: 60px;
+
+    .wrapper {
+        position: relative;
+    }
+}
+
+.icons-icons {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons-border_lines {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    z-index: 2;
+
+    .line-img {
+        max-width: 75%;
+    }
+}
+
+.icon-item {
+    margin-top: 125px;
+    background: #333333;
+    z-index: 3;
+    padding: 13px;
+    border-radius: 48px;
+
+    .icons-text {
+        font-size: 36px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin: 5px 0 0;
+    }
+}
+
+.wrapper {
+    padding: 0 110px;
+}
+
+// /icons
+
+.house {
+    background: url(../img/house.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 712px;
+    background-position: 50% 50%;
+
+    .wrapper {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+
+    }
+}
+
+.house-table {
+    background: rgba(35, 35, 35, 0.9);
+    max-width: 49%;
+    width: 100%;
+    padding: 44px 30px;
+    box-sizing: border-box;
+    margin-top: 12%;
+
+    .table-subtitle {
+        font-family: 'Josefin Sans';
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        line-height: 28px;
+        margin: 0;
+    }
+
+    .table-title {
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 16px 0 0;
+        line-height: 28px;
+    }
+
+    .table-text {
+        font-family: 'Josefin Sans';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin: 16px 0 0;
+    }
+
+    .table-button_a {
+        display: inline-block;
+        margin-top: 24px;
+        padding: 20px 55px;
+        background: #5373FD;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+// /house
+
+.sea {
+    background: url(../img/SeaBG.jpg) no-repeat;
+    background-size: cover;
+    height: 684px;
+    background-position: 50% 50%;
+
+    .wrapper {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.sea-table {
+    background: rgba(35, 35, 35, 0.9);
+    max-width: 49%;
+    width: 100%;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    margin-top: 17%;
+
+    .table-subtitle {
+        font-family: 'Josefin Sans';
+        font-weight: 300;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .table-title {
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 16px 0 0;
+        line-height: 28px;
+    }
+
+    .table-text {
+        font-family: 'Josefin Sans';
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin: 16px 0 0;
+        line-height: 28px;
+    }
+
+    .table-button_a {
+        display: inline-block;
+        margin-top: 24px;
+        padding: 20px 55px;
+        background: #5373FD;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+// /sea
+
+.what_our_tourists {
+    background: url(../img/ManBG.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-height: 708px;
+    height: 100%;
+    background-position: 50% 50%;
+    padding-bottom: 180px;
+}
+
+.what_our_tourists-h3 {
+    font-size: 36px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 120px 0 0;
+    margin: 0;
+    line-height: 40px;
+}
+
+.what_our_tourists-review {
+    display: flex;
+    margin-top: 60px;
+    background: #333333;
+}
+
+.review_img {
+    max-width: 380px;
+    width: 100%;
+    max-height: 308px;
+    height: 100%;
+}
+
+.review_text {
+    margin: 48px 60px;
+    box-sizing: border-box;
+
+    .review_text-title {
+        font-family: 'Josefin Sans';
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .review_blockquote {
+        margin: 0;
+        padding: 0;
+    }
+
+    .review_text-text {
+        font-family: 'Josefin Sans';
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin: 16px 0 0;
+
+        .icon-twoBiceps {
+            color: #5373FD;
+            position: relative;
+            top: -6px;
+        }
+    }
+}
+
+// /what-our-tourists-review
+
+.footer {
+    background: #000000;
+
+    .wrapper {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.footer-title {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 80px;
+}
+
+.footer-subtitle {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    margin: 10px 0 0 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    a {
+        text-decoration: none;
+
+        path {
+            fill: #FFFFFF;
+        }
+
+        &:visited {
+            text-decoration: none;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+
+            path {
+                fill: #5373FD;
+            }
+        }
+    }
+}
+
+// /footer
+
+.wrapper {
+    padding: 0 110px;
+}
+
+@media screen and (max-width:1359px) {
+    .nav-title {
+        max-width: 19%;
+        margin: 30px 0;
+    }
+
+    .nav-links_wrapper {
+        max-width: 60%;
+    }
+
+    // /bhromaon-nav
+
+    .why_choose_us-description {
+        max-width: 56%;
+        width: 100%;
+    }
+
+    .why_choose_us-wrapper_img {
+        max-width: 40%;
+        padding-left: 0;
+    }
+
+    // /why_choose_us
+
+
+    .icons-icons {
+        justify-content: space-between;
+    }
+
+    .icons-border_lines {
+        left: 12%;
+
+        .line-img {
+            max-width: 86%;
+        }
+    }
+
+    // /icons
+
+
+    .house {
+        background: url(../img/1024/house.jpg) no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+    }
+
+    .house-table {
+        max-width: 57%;
+        margin-top: 11%;
+    }
+
+    // /house
+
+
+    .sea {
+        background: url(../img/1024/SeaBG.jpg) no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 712px;
+    }
+
+    .sea-table {
+        max-width: 57.2%;
+        margin-top: 23%;
+    }
+
+    // /sea
+
+
+    .what_our_tourists {
+        background: url(../img/1024/ManBG.jpg) no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 738px;
+        padding-bottom: 0;
+    }
+
+    .review_img {
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    // /what_our
+
+    .footer {
+        max-height: 268px;
+        height: 100%;
+    }
+
+    .footer-subtitle {
+        margin-top: 8px;
+    }
+
+    .footer-social {
+        padding: 22px 0 84px 0;
+    }
+
+    // /footer
+
+
+    .wrapper {
+        padding: 0 32px;
+    }
+
+    // /media 1360px
+}
+
+@media screen and (max-width:1023px) {
+
+    .mountain {
+        background: url(../img/768/mountainBG.jpg) no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 862px;
+    }
+
+    // /mountain
+
+
+    .bhromaon-nav {
+        .wrapper {
+            display: block;
+            padding: 32px 96px;
+        }
+    }
+
+    .nav-title {
+        margin: 0 auto;
+    }
+
+    .nav-links_wrapper {
+        padding-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    // /bhromaon
+
+
+    .why_choose_us {
+        background: url(../img/768/castleBG.jpg) no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        min-height: 659px;
+
+        .wrapper {
+            flex-wrap: wrap-reverse;
+            height: 100%;
+            min-height: auto;
+        }
+    }
+
+
+    .why_choose_us-wrapper_img {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 60px;
+        max-width: 100%;
+        width: 100%;
+        gap: 24px;
+    }
+
+    .why_choose_us-img {
+        max-width: 348px;
+        width: 100%;
+        max-height: 219px;
+        height: 100%;
+    }
+
+    .why_choose_us-picture {
+        max-width: 348px;
+        width: 100%;
+        max-height: 219px;
+        height: 100%;
+    }
+
+    .mini_mountain_picture {
+        margin: 0;
+    }
+
+    .why_choose_us-description {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .description-title {
+        margin-top: 32px;
+    }
+
+    .description-button {
+        margin-top: 24px;
+        padding: 20px 32px;
+    }
+
+    // /why_choose_us
+
+
+    .icons {
+        padding-bottom: 60px;
+    }
+
+    .icons-border_lines {
+        display: none;
+    }
+
+    .icons-icons {
+        display: block;
+    }
+
+    .icon-item {
+        padding-top: 60px;
+        margin: 0;
+    }
+
+    // /icons
+
+
+    .house {
+        background: url(../img/768/house.jpg) no-repeat;
+        background-position: 100% 100%;
+        background-size: cover;
+        height: 558px;
+    }
+
+    .house-table {
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    // /house
+
+
+    .sea {
+        background: url(../img/768/SeaBG.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 558px;
+
+        .wrapper {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            height: 100%;
+        }
+    }
+
+    .sea-table {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    // /sea
+
+    .what_our_tourists {
+        background: url(../img/768/ManBG.jpg) no-repeat;
+        max-height: 924px;
+        background-size: cover;
+        padding-bottom: 184px;
+    }
+
+    .what_our_tourists-h3 {
+        padding-top: 60px;
+    }
+
+    .what_our_tourists-review {
+        display: block;
+        margin: 0;
+        margin-top: 60px;
+        background: none;
+    }
+
+    .review_picture {
+        max-width: 720px;
+        width: 100%;
+        max-height: 336px;
+        height: 100%;
+    }
+
+    .review_img {
+        max-width: 720px;
+        width: 100%;
+        max-height: 336px;
+        height: 100%;
+    }
+
+    .review_text {
+        margin: 0;
+        margin-top: -5px;
+        padding: 48px 60px;
+        background-color: #333333;
+        box-sizing: border-box;
+    }
+
+
+    // /what-our-tourists-review
+    .wrapper {
+        padding: 0 24px;
+    }
+
+    
+}
+    
+@media screen and (max-width:576px) {
+
+    .search_youre-input {
+        width: 540px;
+    }
+
+    // /mountain
+    .bhromaon-nav {
+        position: relative;
+    }
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 27px;
+        right: 45px;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .nav-links_wrapper {
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        padding: 32px auto;
+        background: #5373FD;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .nav-links_wrapper.active {
+        display: block;
+    }
+    .nav-links_wrapper {
+        gap: 24px;
+        display: none;
+    }
+
+    .nav-title {
+        max-width: 40%;
+        width: 100%;
+    }
+
+    .bhromaon-nav {
+        .wrapper {
+            padding: 0 auto;
+            margin: 0 auto;
+        }
+    }
+
+    // /hamburger
+
+    .why_choose_us-picture {
+        max-width: 258px;
+        width: 100%;
+        max-height: 162px;
+        height: 100%;
+    }
+
+    .why_choose_us-img {
+        max-width: 100%;
+        width: 100%;
+        max-height: 100%;
+        height: 100%;
+    }
+
+    .search_youre-input {
+        max-width: 100%;
+        width: 100%;
+    }
+}

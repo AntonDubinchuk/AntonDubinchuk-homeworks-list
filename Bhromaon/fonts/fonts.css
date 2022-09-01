@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap');
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./iconsFont/icomoon.eot');
+    src:  url('./iconsFont/icomoon.eot?w5ck5n#iefix') format('embedded-opentype'),
+      url('./iconsFont/icomoon.ttf?w5ck5n') format('truetype'),
+      url('./iconsFont/icomoon.woff?w5ck5n') format('woff'),
+      url('./iconsFont/icomoon.svg?w5ck5n#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-done:before {
+    content: "\e900";
+    color: #FF6363;
+  }
+  .icon-facebook:before {
+    content: "\e901";
+  }
+  .icon-like:before {
+    content: "\e902";
+    color: #5373FD;
+  }
+  .icon-linkedin:before {
+    content: "\e903";
+  }
+  .icon-pinterest:before {
+    content: "\e904";
+  }
+  .icon-search:before {
+    content: "\e905";
+    color: #5373FD;
+  }
+  .icon-twitter:before {
+    content: "\e906";
+  }
+  .icon-twoBiceps:before {
+    content: "\e907";
+  }
+  .icon-vectorDown:before {
+    content: "\e908";
+  }
+  .icon-youtube:before {
+    content: "\e909";
+  }
